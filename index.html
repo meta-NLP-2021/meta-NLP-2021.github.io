@@ -1,532 +1,427 @@
 <!DOCTYPE html>
-<!-- saved from url=(0069)https://sunprinces.github.io/interspeech2020-meta-learning/index.html -->
-<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
-  <meta name="author" content="Daniel Li">
-  <meta name="description" content="Meta Learning and Its Applications to Natural Language Processing">  
-  <link rel="alternate" hreflang="en-us" href="https://meta-nlp-2021.github.io/index.html">  
-  <meta name="theme-color" content="hsl(339, 90%, 68%)">
-  <link rel="stylesheet" href="./meta-NLP_files/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-  <link rel="stylesheet" href="./meta-NLP_files/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">        
-  <link rel="stylesheet" href="./meta-NLP_files/github.min.css" crossorigin="anonymous" title="hl-light" disabled="">
-  <link rel="stylesheet" href="./meta-NLP_files/dracula.min.css" crossorigin="anonymous" title="hl-dark">
-  <link rel="stylesheet" href="./meta-NLP_files/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
-  <script src="./meta-NLP_files/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async=""></script>  
-  <link rel="stylesheet" href="./meta-NLP_files/css">
-  <link rel="stylesheet" href="./meta-NLP_files/academic.css">
-  <script src="https://kit.fontawesome.com/26c64cb7d0.js" crossorigin="anonymous"></script>
-  <meta property="twitter:card" content="summary">  
-  <meta property="og:site_name" content="Meta Learning and Its Applications to Natural Language Processing">
-  <meta property="og:url" content="https://meta-nlp-2021.github.io/index.html">
-  <meta property="og:title" content="Meta Learning and Its Applications to Natural Language Processing">
-  <meta property="og:description" content="Meta Learning and Its Applications to Natural Language Processing"><meta property="og:image" content="https://sunprinces.github.io/interspeech2020-meta-learning/images/icon_hu193fc9a26a32044892cac699d9253167_196637_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="https://sunprinces.github.io/interspeech2020-meta-learning/images/icon_hu193fc9a26a32044892cac699d9253167_196637_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
-  <meta property="og:updated_time" content="2020-06-01T13:00:00+00:00">
+<html>
+<title>ACL 2021 Meta Learning for NLP</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
-  <title>Meta Learning and Its Applications to Natural Language Processing</title>
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
 
-</head>
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("./images/background.jpg");
+  min-height: 100%;
+}
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="dark" style="opacity: 1; visibility: visible;">
-  <aside class="search-results" id="search">
-  <div class="container">
-    <section class="search-header">
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>Search</h1>
-        </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="https://meta-nlp-2021.github.io/index.html#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-        </div>
-      </div>
-      <div id="search-box">
-      </div>
-    </section>
-    <section class="section-search-results">
-      <div id="search-hits">
-      </div>
-    </section>
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">Meta Learning for NLP</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#discription" class="w3-bar-item w3-button"><i class="fa fa-info"></i> Discription </a>
+      <a href="#call" class="w3-bar-item w3-button"><i class="fa fa-file-text"></i> Call for Papers </a>
+      <a href="#speakers" class="w3-bar-item w3-button"><i class="fa fa-comment-o	
+"></i> Speakers </a>
+      <a href="#program" class="w3-bar-item w3-button"><i class="fa fa-user-secret"></i> Program </a>
+      <a href="#organizer" class="w3-bar-item w3-button"><i class="fa fa-group"></i> Organizers </a>
+      <a href="#reading" class="w3-bar-item w3-button"><i class="fa fa-book"></i> Reading </a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
-</aside>
-<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-  <div class="container">    
-    <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="https://meta-nlp-2021.github.io/">Meta learning for NLP</a>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#discription" onclick="w3_close()" class="w3-bar-item w3-button">Discription</a>
+  <a href="#call" onclick="w3_close()" class="w3-bar-item w3-button">Call for Papers</a>
+  <a href="#speakers" onclick="w3_close()" class="w3-bar-item w3-button">Speakers</a>
+  <a href="#program" onclick="w3_close()" class="w3-bar-item w3-button">Program</a>
+  <a href="#organizers" onclick="w3_close()" class="w3-bar-item w3-button">Organizers</a>
+  <a href="#reading" onclick="w3_close()" class="w3-bar-item w3-button">Reading</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-black" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Meta Learning and Its Applications to Natural Language Processing</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Workshop at ACL 2021</span><br>
+    <span class="w3-large">Workshop at ACL 2021</span>
+    <!--<p><a href="https://neurips-sas-2020.github.io/#organizers" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Link to virtual workshop</a></p> -->
+  </div> 
+  <!--
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  -->
+</header>
+
+<!-- Discription -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="discription">
+  <div class="w3-row-padding">
+    <div class="w3-col m12">
+      <h3>Discription</h3>
+      <p>Deep learning based natural language processing (NLP) has become the mainstream of research in recent years and significantly outperforms conventional methods. However, deep learning models are notorious for being data and computation hungry. These downsides limit such models' application from deployment to different domains, languages, countries, or styles, since collecting in-genre data and model training from scratch are costly. The long-tail nature of human language makes challenges even more significant.
+      </p>
+      <p>
+      Meta-learning, or ‘Learning to Learn’, aims to learn better learning algorithms, including better parameter initialization, optimization strategy, network architecture, distance metrics, and beyond. Meta-learning has been shown to allow faster fine-tuning, converge to better performance, and achieve outstanding results for few-shot learning in many applications. Meta-learning is one of the most important new techniques in machine learning in recent years, but the method is mainly investigated with applications in computer vision. It is believed that meta-learning has excellent potential to be applied in NLP, and some works have been proposed with notable achievements in several relevant problems, e.g., relation extraction, machine translation, and dialogue generation and state tracking. However, it does not catch the same level of attention as in the image processing community.
+      </p>
+      <p>
+      This workshop (Meta Learning and Its Applications to Natural Language Processing Workshop, or MetaNLP) will bring concentrated discussions on meta-learning for the field of NLP via several invited talks, oral and poster sessions with high-quality papers, and a panel of leading researchers from industry and academia. Alongside research work on new meta-learning methods, data, applications, and results, this workshop will call for novel work on understanding, analyzing, and comparing different meta-learning approaches for NLP. The workshop aims to:
+      </p>
+      <ul>
+         <li>review existing and inspire new meta-learning methods and results
+         </li> 
+         <li>motivate the application of meta-learning approaches to more NLP problems in academia and industry, and encourage discussion amongst experts and practitioners from the two realms
+         </li>
+         <li>motivate works on comparing different meta-learning methods and comparing meta-learning to other transfer learning methods that have been long utilized for low-resource NLP
+         </li>
+         <li>encourage communication within the field of NLP to share knowledge, ideas, and data for meta-learning, and encourage future collaboration to inspire innovation.
+         </li>
+        </ul> 
     </div>
-    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-      <span><i class="fas fa-bars"></i></span>
-    </button>    
-    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="https://meta-nlp-2021.github.io/">Meta learning for NLP</a>
-    </div>
-    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
-      <ul class="navbar-nav d-md-inline-flex">
-        <li class="nav-item">
-          <a class="nav-link" href="https://meta-nlp-2021.github.io/#calls" data-target="#calls"><span>Call for Papers</span></a>
+  </div>
+</div>
+
+
+<!-- Call -->
+<div class="w3-container" style="padding:16px 16px" id="call">
+  <div class="w3-row-padding">
+    <div class="w3-col m12">
+      <h3 class="w3-center">Call for Papers</h3>
+      <p>MetaNLP workshop invites submissions that investigate the theoretical and experimental nature of meta learning methodologies and their applications to NLP. Relevant research directions include, but not limited to:
+      </p>
+      <ul>
+        <li>New meta-learning approaches
+        </li> 
+        <li>Application of meta-learning models to NLP tasks
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://meta-nlp-2021.github.io/#speakers" data-target="#speakers"><span>Speakers</span></a>
+        <li>Generalizability of meta-learned models across domains, tasks, or languages
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://meta-nlp-2021.github.io/#program" data-target="#program"><span>Program</span></a>
+        <li>Understanding of why do meta-learning methods work for NLP, for example:    
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://meta-nlp-2021.github.io/#accepted_papers" data-target="#accepted_papers"><span>Accepted Papers</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://meta-nlp-2021.github.io/#people" data-target="#people"><span>Organizers</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://meta-nlp-2021.github.io/#reading" data-target="#reading"><span>Reading</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="https://meta-nlp-2021.github.io/#contact" data-target="#contact"><span>Contact</span></a>
+          <ul>
+            <li>What does the model learn in meta-learning tasks?
+            </li>
+            <li>Are there some meta-learning approaches that are suitable for some NLP applications but not others?
+            </li>
+          </ul>
+        <li>Comparative study on meta-learning approaches.
         </li>
       </ul>
-    </div>
-    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-      <li class="nav-item">
-        <a class="nav-link js-dark-toggle" href="https://meta-nlp-2021.github.io/index.html#"><i class="fas fa-sun" aria-hidden="true"></i></a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<span class="js-widget-page d-none"></span>
-  <section id="intro" class="home-section wg-blank" style="padding: 20px 0 20px 0;">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h1>Meta Learning and Its Applications to Natural Language Processing</h1>
-          <!--weight:  5-->
-          <p><strong>Workshop at ACL 2021</strong></p>
-          <h2 id="description">Description</h2>
-          <p>Deep learning based natural language processing (NLP) has become the mainstream of research in recent years and significantly outperforms conventional methods. However, deep learning models are notorious for being data and computation hungry. These downsides limit such models' application from deployment to different domains, languages, countries, or styles, since collecting in-genre data and model training from scratch are costly. The long-tail nature of human language makes challenges even more significant.</p>
-
-          <p>Meta-learning, or ‘Learning to Learn’, aims to learn better learning algorithms, including better parameter initialization, optimization strategy, network architecture, distance metrics, and beyond. Meta-learning has been shown to allow faster fine-tuning, converge to better performance, and achieve outstanding results for few-shot learning in many applications. Meta-learning is one of the most important new techniques in machine learning in recent years, but the method is mainly investigated with applications in computer vision. It is believed that meta-learning has excellent potential to be applied in NLP, and some works have been proposed with notable achievements in several relevant problems, e.g., relation extraction, machine translation, and dialogue generation and state tracking. However, it does not catch the same level of attention as in the image processing community.</p>
-
-          <p>This workshop (Meta Learning and Its Applications to Natural Language Processing Workshop, or MetaNLP) will bring concentrated discussions on meta-learning for the field of NLP via several invited talks, oral and poster sessions with high-quality papers, and a panel of leading researchers from industry and academia. Alongside research work on new meta-learning methods, data, applications, and results, this workshop will call for novel work on understanding, analyzing, and comparing different meta-learning approaches for NLP. The workshop aims to:
-            <ul>
-              <li>review existing and inspire new meta-learning methods and results</li>
-              <li>motivate the application of meta-learning approaches to more NLP problems in academia and industry, and encourage discussion amongst experts and practitioners from the two realms</li>
-              <li>motivate works on comparing different meta-learning methods and comparing meta-learning to other transfer learning methods that have been long utilized for low-resource NLP</li>
-              <li>encourage communication within the field of NLP to share knowledge, ideas, and data for meta-learning, and encourage future collaboration to inspire innovation.</li>
-            </ul>
-          </p>
-          <!--<div class="alert alert-note">
-            <div>
-              &ndash;&gt;</p>
-          <!--Important information-->
-          <!--
-            </div>
-          </div>
-          -->
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="calls" class="home-section wg-blank" style="padding: 20px 0 20px 0;">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h1>Call for Papers</h1>
-        </div>
-        <div class="col-12">
-          <p>MetaNLP workshop invites submissions that investigate the theoretical and experimental nature of meta learning methodologies and their applications to NLP. Relevant research directions include, but not limited to:
-            <ul>
-              <li>New meta-learning approaches</li>
-              <li>Application of meta-learning models to NLP tasks</li> <!-- TODO: examples of tasks !-->
-              <li>Generalizability of meta-learned models across domains, tasks, or languages</li>
-              <li>Understanding of why do meta-learning methods work for NLP, for example:</li>
-                <ul>
-                  <li>What does the model learn in meta-learning tasks?</li>
-                  <li>Are there some meta-learning approaches that are suitable for some NLP applications but not others?</li>
-                </ul>
-              <li>Comparative study on meta-learning approaches.</li>
-            </ul>
-          </p>
-          <p>Popular meta-learning topics include, but not limited to:
-            <ul>
-              <li>Learning optimizer</li>
-              <li>Learning model initialization</li>
-              <li>Learning metrics or distance measurement</li>
-              <li>Learning training algorithm</li>
-              <li>Few shot learning</li>
-              <li>Network architecture search</li>
-            </ul>
-          </p>
-
-          <p>We welcome three categories of papers: regular workshop papers, cross-submissions, and extended abstracts. <strong>Only the regular workshop paper will be included in the proceedings. The extended Abstracts and cross-submissions will simply be hosted on our websites.</strong> Submissions portal will be announced later.
-            <ul>
-              <li><strong>Regular Workshop Papers</strong> The submissions should be in <a href="https://2021.aclweb.org/calls/papers/">ACL 2021 style</a> between 4 and 8 pages, excluding the references. Authors can add supplementary material in addition to the 8 pages, but reviewers are not required to review the extra material. The papers should present novel research. The review will be double blind and thus all submissions should be anonymized. Double submission is allowed, but the paper accepted by another conference should be moved to cross-submissions.</li>
-              <li><strong>Extended Abstracts</strong> Preliminary but interesting ideas that have not been published before can be submitted as extended abstracts. Ideas and works that would benefit from additional exposure and discussion but are not ready for publication are welcome to be submitted. The submissions should be up to 2 pages long including the references. The review will be double blind and thus all submissions should be anonymized.</li>
-              <li><strong>Cross-Submissions</strong> We also invite works on relevant topics that have appeared in or submitted to alternative venues. Accepted cross-submissions will be presented as posters, with an indication of the original venue. Selection of cross-submissions will be determined solely by the organizing committee.</li>
-            </ul>
-          </p>
-        </div>
-        <div class="col-12">
-          <!--weight: 15-->
-          <div class="alert alert-note">
-            <div>
-              <strong>Important Dates</strong><p></p>
-              <ul>
-                <li>Paper Submissions Due: April 26, 2021 (AoE)</li>
-                <li>Notification of Acceptance: May 28, 2021 (AoE)</li>
-                <li>Camera-ready Paper Due: June 7, 2021 (AoE)</li>
-                <li>Workshop Date: August 5 or 6, 2021</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="speakers" class="home-section wg-people   ">
-    <div class="container">
-      <div class="row justify-content-center people-widget">  
-        <div class="col-lg-12">
-          <h1 style="text-align:left">Speakers</h1>
-        </div>
-        <div class="col-12 col-sm-4 people-person">
-          <div class="portrait-title">
-            <h2>Andreas Vlachos</h2>
-            <h3>University of Cambridge</h3>
-          </div>
-        </div>
-        <div class="col-12 col-sm-4 people-person">
-          <div class="portrait-title">
-            <h2>Chelsea Finn</h2>
-            <h3>Stanford University</h3>
-          </div>
-        </div>
-        <div class="col-12 col-sm-4 people-person">
-          <div class="portrait-title">
-            <h2>Eric Xing</h2>
-            <h3>Carnegie Mellon University</h3>
-          </div>
-        </div>
-        <div class="col-12 col-sm-4 people-person">
-          <div class="portrait-title">
-            <h2>Heng Ji</h2>
-            <h3>University of Illinois Urbana-Champaign</h3>
-          </div>
-        </div>
-        <div class="col-12 col-sm-4 people-person">
-          <div class="portrait-title">
-            <h2>William Hamilton</h2>
-            <h3>McGill University</h3>
-          </div>
-        </div>
-        <div class="col-12 col-sm-4 people-person">
-          <div class="portrait-title">
-            <h2>Zhou Yu</h2>
-            <h3>Columbia University</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="program" class="home-section wg-blank" style="padding: 20px 0 20px 0;">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h1>Program</h1>
-          <p>TBD</p>
-        </div>  
-      </div>
-    </div>
-  </section>
-
-  <section id="accepted_papers" class="home-section wg-blank   " style="padding: 20px 0 20px 0;">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h1>Accepted Papers</h1>
-          <p>TBD</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="people" class="home-section wg-people   ">
-    <div class="container">
-      <div class="row justify-content-center people-widget">  
-        <div class="col-lg-12">
-          <h1 style="text-align:left">Organizers</h1>
-        </div>
-        <div class="col-md-12">
-          <h2>&nbsp;</h2>
-        </div>
-        <div class="col-12 col-sm-3 people-person">
-            <!-- TODO -->
-            <a href="https://meta-nlp-2021.github.io/authors/hungyi/"><img class="avatar avatar-circle" src="./meta-NLP_files/hungyi.jpg" alt="Avatar"></a>
-          <div class="portrait-title">
-            <h2>Hung-Yi Lee</h2>
-            <h3>National Taiwan University</h3>
-            <h3>Associate Professor</h3>
-          </div>
-        </div>
-        <div class="col-12 col-sm-3 people-person">
-            <a href="https://meta-nlp-2021.github.io/authors/mitra/"><img class="avatar avatar-circle" src="./meta-NLP_files/mitra.jpg" alt="Avatar"></a>
-          <div class="portrait-title">
-            <h2>Mitra Mohtarami</h2>
-            <h3>Massachusetts Institute of Technology</h3>
-            <h3>Research Scientist</h3>
-          </div>
-        </div>
-        <div class="col-12 col-sm-3 people-person">
-            <a href="https://meta-nlp-2021.github.io/authors/shangwen/"><img class="avatar avatar-circle" src="./meta-NLP_files/daniel.jpg" alt="Avatar"></a>
-          <div class="portrait-title">
-            <h2>Shang-Wen Li</h2>
-            <h3>Amzaon web services AI</h3>
-            <h3>Senior Applied Scientist</h3>
-          </div>
-        </div>
-        <div class="col-12 col-sm-3 people-person">
-            <a href="https://meta-nlp-2021.github.io/authors/di/"><img class="avatar avatar-circle" src="./meta-NLP_files/di.jpeg" alt="Avatar"></a>
-          <div class="portrait-title">
-            <h2>Di Jin</h2>
-            <h3>Amazon Alexa AI</h3>
-            <h3>Applied Scientist</h3>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-3 people-person">
-            <!-- TODO -->
-            <a href="https://meta-nlp-2021.github.io/authors/mandy/"><img class="avatar avatar-circle" src="./meta-NLP_files/mandy.jpg" alt="Avatar"></a>
-          <div class="portrait-title">
-            <h2>Mandy Korpusik</h2>
-            <h3>Loyola Marymount University</h3>
-            <h3>Assistant Professor</h3>
-          </div>
-        </div>
-        <div class="col-12 col-sm-3 people-person">
-            <a href="https://meta-nlp-2021.github.io/authors/annie/"><img class="avatar avatar-circle" src="./meta-NLP_files/annie.jpg" alt="Avatar"></a>
-          <div class="portrait-title">
-            <h2>Annie Dong</h2>
-            <h3>Amazon Alexa AI</h3>
-            <h3>Applied Scientist</h3>
-          </div>
-        </div>
-        <div class="col-12 col-sm-3 people-person">
-            <a href="https://meta-nlp-2021.github.io/authors/ngoc/"><img class="avatar avatar-circle" src="./meta-NLP_files/thang.jpg" alt="Avatar"></a>
-          <div class="portrait-title">
-            <h2>Ngoc Thang Vu</h2>
-            <h3>University of Stuttgart</h3>
-            <h3>Professor</h3>
-          </div>
-        </div>
-        <div class="col-12 col-sm-3 people-person">
-            <a href="https://meta-nlp-2021.github.io/authors/dilek/"><img class="avatar avatar-circle" src="./meta-NLP_files/dilek.jpeg" alt="Avatar"></a>
-          <div class="portrait-title">
-            <h2>Dilek Hakkani-Tur</h2>
-            <h3>Amazon Alexa AI</h3>
-            <h3>Senior Principal Scientist</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="reading" class="home-section wg-blank   " style="padding: 20px 0 20px 0;">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h1>Reading</h1>
-          <p>Meta learning is one of the fastest growing research areas in the deep learning scope. However there is no standard definition for meta learning. Usually the main goal is to design models that can learn new tasks rapidly with few in domain training examples, by having models to pre-learn from many, relevant or not, training tasks in a way that the models are easy to be generalized to new tasks. For better understanding the scope of meta learning, we provide several online courses and papers describing the works falling into the area. These works are just for showcasing, and we definitely encourage people with research not covered here but sharing the same goal mentioned above to submit.</p>
-          <h3 id="online-courses">Online Courses</h3>
-          <ul>
-            <li>
-                <a href="http://cs330.stanford.edu/" target="_blank" rel="noopener">CS 330: Deep Multi-Task and Meta Learning</a>
-            </li>
-            <li>
-                <a href="https://youtu.be/wurPYalweeo" target="_blank" rel="noopener">Hung-Yi Lee’s Lecture</a>
-             (in Mandarin)</li>
-          </ul>
-          <h3 id="papers">Papers</h3>
-          <h4 id="meta-learning-technology">Meta Learning Technology</h4>
-          <ul>
-            <li>Learning to Initialize:
-              <ul>
-                <li>Chelsea Finn, Pieter Abbeel, and Sergey Levine, “Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks”, ICML, 2017</li>
-                <li>Sebastian Flennerhag, Pablo G. Moreno, Neil D. Lawrence, Andreas Damianou, Transferring Knowledge across Learning Processes, ICLR, 2019</li>
-              </ul>
-            </li>
-            <li>Learning to optimize:
-              <ul>
-                <li>Sachin Ravi, Hugo Larochelle, Optimization as a model for few-shot learning, ICLR, 2017</li>
-                <li>Marcin Andrychowicz, Misha Denil, Sergio Gomez, Matthew W. Hoffman, David Pfau, Tom Schaul, Brendan Shillingford, Nando de Freitas, Learning to learn by gradient descent by gradient descent, NIPS, 2016</li>
-              </ul>
-            </li>
-            <li>Learning to compare
-              <ul>
-                <li>Jake Snell, Kevin Swersky, Richard S. Zemel, Prototypical Networks for Few-shot Learning, NIPS, 2017</li>
-                <li>Oriol Vinyals, Charles Blundell, Timothy Lillicrap, Koray Kavukcuoglu, Daan Wierstra, Matching Networks for One Shot Learning, NIPS, 2016</li>
-                <li>Flood Sung, Yongxin Yang, Li Zhang, Tao Xiang, Philip H.S. Torr, Timothy M. Hospedales, Learning to Compare: Relation Network for Few-Shot Learning, CVPR, 2018</li>
-              </ul>
-            </li>
-            <li>Learning the whole learning algorithm
-              <ul>
-                <li>Adam Santoro, Sergey Bartunov, Matthew Botvinick, Daan Wierstra, Timothy Lillicrap, Meta-Learning with Memory-Augmented Neural Networks, ICML, 2016</li>
-                <li>Nikhil Mishra, Mostafa Rohaninejad, Xi Chen, Pieter Abbeel, A Simple Neural Attentive Meta-Learner, ICLR, 2018</li>
-              </ul>
-            </li>
-            <li>Network architecture search:
-              <ul>
-                <li>RL based
-                  <ul>
-                    <li>Barret Zoph, Quoc V. Le, Neural Architecture Search with Reinforcement Learning, ICLR 2017</li>
-                    <li>Barret Zoph, Vijay Vasudevan, Jonathon Shlens, Quoc V. Le,  Learning Transferable Architectures for Scalable Image Recognition, CVPR, 2018</li>
-                    <li>Hieu Pham, Melody Guan, Barret Zoph, Quoc Le, Jeff Dean, Efficient Neural Architecture Search via Parameter Sharing, ICML, 2018</li>
-                  </ul>
-                </li>
-                <li>Evolution based
-                  <ul>
-                    <li>Esteban Real, Sherry Moore, Andrew Selle, Saurabh Saxena, Yutaka Leon Suematsu, Jie Tan, Quoc Le, Alex Kurakin, Large-Scale Evolution of Image Classifiers, ICML 2017</li>
-                    <li>Esteban Real, Alok Aggarwal, Yanping Huang, Quoc V Le, Regularized Evolution for Image Classifier Architecture Search, AAAI, 2019</li>
-                    <li>Hanxiao Liu, Karen Simonyan, Oriol Vinyals, Chrisantha Fernando, Koray Kavukcuoglu, Hierarchical Representations for Efficient Architecture Search, ICLR, 2018</li>
-                  </ul>
-                </li>
-                <li>Supernetwork based
-                  <ul>
-                    <li>Hanxiao Liu, Karen Simonyan, Yiming Yang, DARTS: Differentiable Architecture Search, ICLR, 2019</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <h4 id="applications-to-human-language-technology">Applications to Natural language understanding:</h4>
-
-          <ul>
-            <li><strong>[Bansal, et al., arXiv’19]</strong> Trapit Bansal, Rishikesh Jha, Andrew McCallum, Learning to Few-Shot Learn Across Diverse Natural Language Classification Tasks, arXiv, 2019</li>
-            <li><strong>[Bose, et al., arXiv’19]</strong> Avishek Joey Bose, Ankit Jain, Piero Molino, William L. Hamilton, Meta-Graph: Few shot Link Prediction via Meta Learning, arXiv, 2019</li>
-            <li><strong>[Campagna, et al., ACL’20]</strong> Giovanni Campagna, Agata Foryciarz, Mehrad Moradshahi, Monica Lam, Zero-Shot Transfer Learning with Synthesized Data for Multi-Domain Dialogue State Tracking, ACL 2020</li>
-            <li><strong>[Chen, et al., EMNLP’19]</strong> Mingyang Chen, Wen Zhang, Wei Zhang, Qiang Chen, Huajun Chen, Meta Relational Learning for Few-Shot Link Prediction in Knowledge Graphs, EMNLP 2019</li>
-            <li><strong>[Chen, et al., INTERSPEECH'20]</strong> Yi-Chen Chen, Jui-Yang Hsu, Cheng-Kuang Lee, Hung-yi Lee, DARTS-ASR: Differentiable architecture search for multilingual speech recognition and adaptation, INTERSPEECH 2020</li>
-            <li><strong>[Chen, et al., ACL’20]</strong> Zhiyu Chen, Harini Eavani, Wenhu Chen, Yinyin Liu, William Yang Wang, Few-Shot NLG with Pre-Trained Language Model, ACL 2020</li>
-            <li><strong>[Chien, et al., INTERSPEECH’19]</strong> Jen-Tzung Chien, Wei Xiang Lieow, Meta Learning for Hyperparameter Optimization in Dialogue System, INTERSPEECH, 2019</li>
-            <li><strong>[Coope, et al., ACL’20]</strong> Samuel Coope, Tyler Farghly, Daniela Gerz, Ivan Vulić, Matthew Henderson, Span-ConveRT: Few-shot Span Extraction for Dialog with Pretrained Conversational Representations, ACL 2020</li>
-            <li><strong>[Dou, et al., EMNLP’19]</strong> Zi-Yi Dou, Keyi Yu, Antonios Anastasopoulos, Investigating Meta-Learning Algorithms for Low-Resource Natural Language Understanding Tasks, EMNLP 2019</li>
-            <li><strong>[Geng, et al., EMNLP’19]</strong> Ruiying Geng, Binhua Li, Yongbin Li, Xiaodan Zhu, Ping Jian, Jian Sun, Induction Networks for Few-Shot Text Classification, EMNLP, 2019</li>
-            <li><strong>[Geng, et al., ACL’20]</strong> Ruiying Geng, Binhua Li, Yongbin Li, Jian Sun, Xiaodan Zhu, Dynamic Memory Induction Networks for Few-Shot Text Classification, ACL 2020</li>
-            <li><strong>[Gu, et al., EMNLP’18]</strong> Jiatao Gu, Yong Wang, Yun Chen, Kyunghyun Cho, Victor O.K. Li, Meta-Learning for Low-Resource Neural Machine Translation, EMNLP, 2018</li>
-            <li><strong>[Guo, et al., ACL’19]</strong> Daya Guo, Duyu Tang, Nan Duan, Ming Zhou, Jian Yin, Coupling Retrieval and Meta-Learning for Context-Dependent Semantic Parsing, ACL, 2019</li>
-            <li><strong>[Hou, et al., ACL’20]</strong> Yutai Hou, Wanxiang Che, Yongkui Lai, Zhihan Zhou, Yijia Liu, Han Liu, Ting Liu, Few-shot Slot Tagging with Collapsed Dependency Transfer and Label-enhanced Task-adaptive Projection Network, ACL 2020</li>
-            <li><strong>[Hu, et al., ACL’19]</strong> Ziniu Hu, Ting Chen, Kai-Wei Chang, Yizhou Sun, Few-Shot Representation Learning for Out-Of-Vocabulary Words, ACL 2019</li>
-            <li><strong>[Huang, et al., NAACL’18]</strong> Po-Sen Huang, Chenglong Wang, Rishabh Singh, Wen-tau Yih, Xiaodong He, Natural Language to Structured Query Generation via Meta-Learning, NAACL 2018</li>
-            <li><strong>[Huang, et al., ACL’20]</strong> Yi Huang, Junlan Feng, Min Hu, Xiaoting Wu, Xiaoyu Du, Shuo Ma, Meta-Reinforced Multi-Domain State Generator for Dialogue Systems, ACL 2020</li>
-            <li><strong>[Kim, et al., ACL’20]</strong> Hwichan Kim, Tosho Hirasawa, Mamoru Komachi, Zero-shot North Korean to English Neural Machine Translation by Character Tokenization and Phoneme Decomposition, ACL 2020</li>
-            <li><strong>[Luo, et al., INTERSPEECH'20]</strong> Hongyin Luo, Shang-Wen Li, James Glass, Prototypical q networks for automatic conversational diagnosis and few-shot new disease adaption, INTERSPEECH 2020</li>
-            <li><strong>[Lv, et al., EMNLP’19]</strong> Xin Lv, Yuxian Gu, Xu Han, Lei Hou, Juanzi Li, Zhiyuan Liu, Adapting Meta Knowledge Graph Information for Multi-Hop Reasoning over Few-Shot Relations, EMNLP 2019</li>
-            <li><strong>[Madotto, et al., ACL’19]</strong> Andrea Madotto, Zhaojiang Lin, Chien-Sheng Wu, Pascale Fung, Personalizing Dialogue Agents via Meta-Learning, ACL 2019</li>
-            <li><strong>[Mohtarami, et al., EMNLP’19]</strong> Mitra Mohtarami, James Glass, Preslav Nakov, Contrastive language adaptation for cross-lingual stance detection, EMNLP 2019</li>
-            <li><strong>[Mu, et al., ACL’20]</strong> Jesse Mu, Percy Liang, Noah Goodman, Shaping Visual Representations with Language for Few-shot Classification, ACL 2020</li>
-            <li><strong>[Obamuyide, et al., ACL’19]</strong> Abiola Obamuyide, Andreas Vlachos, Model-Agnostic Meta-Learning for Relation Classification with Limited Supervision, ACL 2019</li>
-            <li><strong>[Qian, et al., ACL’19]</strong> Kun Qian, Zhou Yu, Domain Adaptive Dialog Generation via Meta Learning, ACL 2019</li>
-            <li><strong>[Shah, et al., ACL’19]</strong> Darsh Shah, Raghav Gupta, Amir Fayazi, Dilek Hakkani-Tur, Robust zero-shot cross-domain slot filling with example values, ACL 2019</li>
-            <li><strong>[Song, et al., ACL’20]</strong> Yiping Song, Zequn Liu, Wei Bi, Rui Yan, Ming Zhang, Learning to Customize Model Structures for Few-shot Dialogue Generation Tasks, ACL 2020</li>
-            <li><strong>[Sun, et al., EMNLP’18]</strong> Jingyuan Sun, Shaonan Wang, Chengqing Zong, Memory, Show the Way: Memory Based Few Shot Word Representation Learning, EMNLP 2018</li>
-            <li><strong>[Sun, et al., EMNLP’19]</strong> Shengli Sun, Qingfeng Sun, Kevin Zhou, Tengchao Lv, Hierarchical Attention Prototypical Networks for Few-Shot Text Classification, EMNLP 2019</li>
-            <li><strong>[Surís, et al., arXiv’19]</strong> Dídac Surís, Dave Epstein, Heng Ji, Shih-Fu Chang, Carl Vondrick, Learning to Learn Words from Narrated Video, arXiv, 2019</li>
-            <li><strong>[Tan, et al., EMNLP’19]</strong> Ming Tan, Yang Yu, Haoyu Wang, Dakuo Wang, Saloni Potdar, Shiyu Chang, Mo Yu, Out-of-Domain Detection for Low-Resource Text Classification Tasks, EMNLP 2019</li>
-            <li><strong>[Wang, et al., EMNLP’19]</strong> Zihao Wang, Kwun Ping Lai, Piji Li, Lidong Bing, Wai Lam, Tackling Long-Tailed Relations and Uncommon Entities in Knowledge Graph Completion, EMNLP 2019</li>
-            <li><strong>[Winata, et al., ACL’20]</strong> Genta Indra Winata, Samuel Cahyawijaya, Zhaojiang Lin, Zihan Liu, Peng Xu, Pascale Fung, Meta-Transfer Learning for Code-Switched Speech Recognition, ACL 2020</li>
-            <li><strong>[Wu, et al., EMNLP’19]</strong> Jiawei Wu, Wenhan Xiong, William Yang Wang, Learning to Learn and Predict: A Meta-Learning Approach for Multi-Label Classification, EMNLP 2019</li>
-            <li><strong>[Wu, et al., AAAI’20]</strong> Qianhui Wu, Zijia Lin, Guoxin Wang, Hui Chen, Börje F. Karlsson, Biqing Huang, Chin-Yew Lin, Enhanced Meta-Learning for Cross-lingual Named Entity Recognition with Minimal Resources, AAAI 2020</li>
-            <li><strong>[Xiong, et al., EMNLP’18]</strong> Wenhan Xiong, Mo Yu, Shiyu Chang, Xiaoxiao Guo, William Yang Wang, One-Shot Relational Learning for Knowledge Graphs, EMNLP 2018</li>
-            <li><strong>[Yan, et al., ACL’20]</strong> Guangfeng Yan, Lu Fan, Qimai Li, Han Liu, Xiaotong Zhang, Xiao-Ming Wu, Albert Y.S. Lam, Unknown Intent Detection Using Gaussian Mixture Model with an Application to Zero-shot Intent Classification, ACL 2020</li>
-            <li><strong>[Yan, et al., ACL’20]</strong> Ming Yan, Hao Zhang, Di Jin, Joey Tianyi Zhou, Multi-source meta transfer for low resource multiple-choice question answering, ACL 2020</li>
-            <li><strong>[Ye, et al., ACL’20]</strong> Zhiquan Ye, Yuxia Geng, Jiaoyan Chen, Jingmin Chen, Xiaoxiao Xu, SuHang Zheng, Feng Wang, Jun Zhang, Huajun Chen, Zero-shot Text Classification via Reinforced Self-training, ACL 2020</li>
-            <li><strong>[Ye, et al., ACL’19]</strong> Zhi-Xiu Ye, Zhen-Hua Ling, Multi-Level Matching and Aggregation Network for Few-Shot Relation Classification, ACL 2019</li>
-            <li><strong>[Yu, et al., ACL’20]</strong> Changlong Yu, Jialong Han, Haisong Zhang, Wilfred Ng, Hypernymy Detection for Low-Resource Languages via Meta Learning, ACL 2020</li>
-            <li><strong>[Yu, et al., ACL’18]</strong> Mo Yu, Xiaoxiao Guo, Jinfeng Yi, Shiyu Chang, Saloni Potdar, Yu Cheng, Gerald Tesauro, Haoyu Wang, Bowen Zhou, Diverse Few-Shot Text Classification with Multiple Metrics, ACL 2018</li>
-            <li><strong>[Zhang, et al., ACL’20]</strong> Biao Zhang, Philip Williams, Ivan Titov, Rico Sennrich, Improving Massively Multilingual Neural Machine Translation and Zero-Shot Translation, ACL 2020</li>
-            <li><strong>[Zhao, et al. EMNLP’19]</strong> Zhenjie Zhao, Xiaojuan Ma, Text Emotion Distribution Learning from Small Sample: A Meta-Learning Approach, EMNLP 2019</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="contact" class="home-section wg-contact   ">
-    <div class="container">
-      <div class="row contact-widget">
-        <div class="col-12 col-lg-4 section-heading">
-          <h1>Contact</h1>
-        </div>
-        <div class="col-12 col-lg-8">
-          If you have any questions or feedback, please feel free to contact us
-          <ul class="fa-ul">
-            <li>
-              <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
-              <span id="person-email"><a href="mailto:meta.nlp.acl.2021@gmail.com">meta.nlp.acl.2021@gmail.com</a></span>
-              <!--<span id="person-email"><a href="mailto:is.2020.meta.learning@gmail.com">is.2020.meta.learning@gmail.com</a></span>-->
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <script src="./meta-NLP_files/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="./meta-NLP_files/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-  <script src="./meta-NLP_files/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-  <script src="./meta-NLP_files/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
-  <script src="./meta-NLP_files/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
-  <script src="./meta-NLP_files/r.min.js"></script>
-  <script src="./meta-NLP_files/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
-  <script>const code_highlighting = true;</script>
-  <script src="./meta-NLP_files/academic.min.e5c8525332f417fe3589df9a6b25b6c4.js"></script>
-  
-  <div class="container">
-    <footer class="site-footer">
-      <p class="powered-by">
-        © [Conference name] · 
-        Powered by the
-        <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-        <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>.
-        <span class="float-right" aria-hidden="true">
-          <a href="https://meta-nlp-2021.github.io/index.html#" class="back-to-top">
-            <span class="button_icon">
-              <i class="fas fa-chevron-up fa-2x"></i>
-            </span>
-          </a>
-        </span>
+      <p>Popular meta-learning topics include, but not limited to:
       </p>
-    </footer>
+        <ul>
+          <li>Learning optimizer
+          </li>
+          <li>Learning model initialization
+          </li>
+          <li>Learning metrics or distance measurement
+          </li>
+          <li>Learning training algorithm
+          </li>
+          <li>Few shot learning
+          </li>
+          <li>Network architecture search
+          </li>
+        </ul>
+      <p>We welcome three categories of papers: regular workshop papers, cross-submissions, and extended abstracts. <b>Only the regular workshop paper will be included in the proceedings. The extended Abstracts and cross-submissions will simply be hosted on our websites.</b> Submissions portal will be announced later.      
+      </p>
+      <ul>
+        <li> <b>Regular Workshop Papers</b> The submissions should be in <a href="https://2021.aclweb.org/calls/papers/"style="color:blue;text_decorate=underline">ACL 2021 style</a>  between 4 and 8 pages, excluding the references. Authors can add supplementary material in addition to the 8 pages, but reviewers are not required to review the extra material. The papers should present novel research. The review will be double blind and thus all submissions should be anonymized. Double submission is allowed, but the paper accepted by another conference should be moved to cross-submissions.
+        </li>
+        <li> <b>Extended Abstracts</b> Preliminary but interesting ideas that have not been published before can be submitted as extended abstracts. Ideas and works that would benefit from additional exposure and discussion but are not ready for publication are welcome to be submitted. The submissions should be up to 2 pages long including the references. The review will be double blind and thus all submissions should be anonymized.
+        </li>
+        <li> <b>Cross-Submissions</b> We also invite works on relevant topics that have appeared in or submitted to alternative venues. Accepted cross-submissions will be presented as posters, with an indication of the original venue. Selection of cross-submissions will be determined solely by the organizing committee.
+        </li>
+      </ul>
+      <div style="padding: 0px 30px 0px">
+      <div class="w3-panel w3-Marina w3-border w3-border-blue w3-round">
+        <h3><strong>Important Dates</strong></h3>
+        <ul>
+          <li>Paper Submissions Due: April 26, 2021 (AoE)</li>
+          <li>Notification of Acceptance: May 28, 2021 (AoE)</li>
+          <li>Camera-ready Paper Due: June 7, 2021 (AoE)</li>
+          <li>Workshop Date: August 5 or 6, 2021</li>
+        </ul>
+      </div>
+      </div>
+    </div>
   </div>
+</div>
 
-  
-<div id="modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Cite</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
+<!-- Speakers -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="speakers">
+  <h3 class="w3-center">Invited Speakers</h3>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./images/Vlachos.jpg" style="width:100%">
+        <div class="w3-container">
+          <h3> Andreas Vlachos </h3>
+          <p class="w3-opacity">University of Cambridge</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='https://andreasvlachos.github.io/';"><i class="fa fa-user"></i> Personal site </button></p>
+        </div>
       </div>
-      <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./images/finn.jpg" style="width:100%">
+        <div class="w3-container">
+          <h3> Chelsea Finn </h3>
+          <p class="w3-opacity">Stanford University</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='https://ai.stanford.edu/~cbfinn/';"><i class="fa fa-user"></i> Personal site </button></p>
+        </div>
       </div>
-      <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="https://meta-nlp-2021.github.io/index.html#" target="_blank">
-          <i class="fas fa-copy"></i> Copy
-        </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="https://meta-nlp-2021.github.io/index.html#" target="_blank">
-          <i class="fas fa-download"></i> Download
-        </a>
-        <div id="modal-error"></div>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./images/xing.jpg" style="width:100%">
+        <div class="w3-container">
+          <h3> Eric Xing </h3>
+          <p class="w3-opacity">Carnegie Mellon University</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='http://www.cs.cmu.edu/~epxing/';"><i class="fa fa-user"></i> Personal site </button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./images/ji.png" style="width:100%">
+        <div class="w3-container">
+          <h3> Heng Ji </h3>
+          <p class="w3-opacity">University of Illinois Urbana-Champaign</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='http://blender.cs.illinois.edu/hengji.html';"><i class="fa fa-user"></i> Personal site </button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./images/hamilton.png" style="width:100%">
+        <div class="w3-container">
+          <h3> William L. Hamilton </h3>
+          <p class="w3-opacity">McGill University</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='https://williamleif.github.io/';"><i class="fa fa-user"></i> Personal site </button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./images/yu.png" style="width:100%">
+        <div class="w3-container">
+          <h3> Zhou Yu </h3>
+          <p class="w3-opacity">Columbia University</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='http://zhouyu.cs.ucdavis.edu/';"><i class="fa fa-user"></i> Personal site </button></p>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 
-</body></html>
+<!-- Organizer Section -->
+
+<div class="w3-container" style="padding:128px 16px" id="organizer"> 
+  <h3 class="w3-center">Organizers</h3>
+  <div class="w3-row-padding w3-grayscale" style="margin:auto">
+    <div class="w3-col l3 m5 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./images/Vlachos.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+        <div class="w3-container">
+          <h3> Hung-Yi Lee </h3>
+          <p class="w3-opacity">National Taiwan University</p>
+          <p class="w3-opacity">Associate Professor</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='http://speech.ee.ntu.edu.tw/~tlkagk/index.html';"><i class="fa fa-user"></i> Personal site </button></p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='hungyilee@ntu.edu.tw';"><i class="fa fa-envelope"></i> Email </button></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="w3-col l3 m5 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./images/Vlachos.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+        <div class="w3-container">
+          <h3> Mitra Mohtarami </h3>
+          <p class="w3-opacity">Massachusetts Institute of Technology</p>
+          <p class="w3-opacity">Research Scientist</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='http://speech.ee.ntu.edu.tw/~tlkagk/index.html';"><i class="fa fa-user"></i> Personal site </button></p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='hungyilee@ntu.edu.tw';"><i class="fa fa-envelope"></i> Email </button></p>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="w3-col l3 m5 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./images/Vlachos.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+        <div class="w3-container">
+          <h3> Shang-Wen Li </h3>
+          <p class="w3-opacity">Amzaon web services AI</p>
+          <p class="w3-opacity">Senior Applied Scientist</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='http://speech.ee.ntu.edu.tw/~tlkagk/index.html';"><i class="fa fa-user"></i> Personal site </button></p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='hungyilee@ntu.edu.tw';"><i class="fa fa-envelope"></i> Email </button></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="w3-col l3 m5 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./images/Vlachos.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+        <div class="w3-container">
+          <h3> Di Jin </h3>
+          <p class="w3-opacity">Amazon Alexa AI</p>
+          <p class="w3-opacity">Applied Scientist</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='http://speech.ee.ntu.edu.tw/~tlkagk/index.html';"><i class="fa fa-user"></i> Personal site </button></p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='hungyilee@ntu.edu.tw';"><i class="fa fa-envelope"></i> Email </button></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="w3-col l3 m5 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./images/Vlachos.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+        <div class="w3-container">
+          <h3> Mandy Korpusik </h3>
+          <p class="w3-opacity">Loyola Marymount University</p>
+          <p class="w3-opacity">Assistant Professor</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='http://speech.ee.ntu.edu.tw/~tlkagk/index.html';"><i class="fa fa-user"></i> Personal site </button></p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='hungyilee@ntu.edu.tw';"><i class="fa fa-envelope"></i> Email </button></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="w3-col l3 m5 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./images/Vlachos.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+        <div class="w3-container">
+          <h3> Annie Dong </h3>
+          <p class="w3-opacity">Amazon Alexa AI</p>
+          <p class="w3-opacity">Applied Scientist</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='http://speech.ee.ntu.edu.tw/~tlkagk/index.html';"><i class="fa fa-user"></i> Personal site </button></p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='hungyilee@ntu.edu.tw';"><i class="fa fa-envelope"></i> Email </button></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="w3-col l3 m5 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./images/Vlachos.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+        <div class="w3-container">
+          <h3> Ngoc Thang Vu </h3>
+          <p class="w3-opacity">University of Stuttgart</p>
+          <p class="w3-opacity">Professor</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='http://speech.ee.ntu.edu.tw/~tlkagk/index.html';"><i class="fa fa-user"></i> Personal site </button></p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='hungyilee@ntu.edu.tw';"><i class="fa fa-envelope"></i> Email </button></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="w3-col l3 m5 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./images/Vlachos.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+        <div class="w3-container">
+          <h3> Dilek Hakkani-Tur </h3>
+          <p class="w3-opacity">Amazon Alexa AI</p>
+          <p class="w3-opacity">Senior Principal Scientist</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='http://speech.ee.ntu.edu.tw/~tlkagk/index.html';"><i class="fa fa-user"></i> Personal site </button></p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='hungyilee@ntu.edu.tw';"><i class="fa fa-envelope"></i> Email </button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    <br>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
