@@ -15,7 +15,7 @@ body, html {
 }
 
 .crop {
-    height:550px;
+    height:330px;
     overflow:hidden;
 }
 
@@ -26,6 +26,12 @@ body, html {
   background-size: cover;
   background-image: url("./images/background.jpeg");
   min-height: 100%;
+}
+
+@media all and (max-width: 1200px) and (min-width: 700px) {
+  .w3-container {
+   margin:50px;
+  }
 }
 
 .w3-bar .w3-button {
@@ -183,7 +189,7 @@ body, html {
 </div>
 
 <!-- Speakers -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px; margin-left:auto; margin-right:auto; width:1200px" id="speakers">
+<div class="w3-container w3-light-grey" style="padding:128px 16px;" id="speakers">
   <h3 class="w3-center">Invited Speakers</h3>
   <div class="w3-row-padding" style="margin: auto;">
     <div class="w3-col l4 m6 w3-margin-bottom">
