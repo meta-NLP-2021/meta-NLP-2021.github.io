@@ -383,6 +383,125 @@ body, html {
   </div>
 </div>
 
+<!-- Reading -->
+<div class="w3-row-padding w3-padding-64 w3-container" id="reading">
+  <div class="w3-content">
+      <h3 class="w3-center">Reading</h3>
+      <p>Meta learning is one of the fastest growing research areas in the deep learning scope. However there is no standard definition for meta learning. Usually the main goal is to design models that can learn new tasks rapidly with few in domain training examples, by having models to pre-learn from many, relevant or not, training tasks in a way that the models ar    e easy to be generalized to new tasks. For better understanding the scope of meta learning, we provide several online courses and papers describing the works falling into the area. These works are just for showcasing, and we definitely encourage people with research not covered here but sharing the same goal mentioned above to submit.
+      </p>
+      <h4> Online Courses </h4>
+        <ul>
+          <li>
+            <a href="http://cs330.stanford.edu/" target="_blank" rel="noopener">CS 330: Deep Multi-Task and Meta Learning</a>
+          </li>
+          <li>
+             <a href="https://youtu.be/wurPYalweeo" target="_blank" rel="noopener">Hung-Yi Lee’s Lecture</a>(in Mandarin)
+          </li>  
+        </ul>
+      <h4 id="papers">Papers</h3>
+        <h5 id="meta-learning-technology">Meta Learning Technology</h4>
+          <ul>
+            <li>Learning to Initialize:
+              <ul>
+                <li>Chelsea Finn, Pieter Abbeel, and Sergey Levine, “Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks”, ICML, 2017</li>
+                <li>Sebastian Flennerhag, Pablo G. Moreno, Neil D. Lawrence, Andreas Damianou, Transferring Knowledge across Learning Processes, ICLR, 2019</li>
+              </ul>
+            </li>
+            <li>Learning to optimize:
+              <ul>
+                <li>Sachin Ravi, Hugo Larochelle, Optimization as a model for few-shot learning, ICLR, 2017</li>
+                <li>Marcin Andrychowicz, Misha Denil, Sergio Gomez, Matthew W. Hoffman, David Pfau, Tom Schaul, Brendan Shillingford, Nando de Freitas, Learning to learn by gradient descent by gradient descent, NIPS, 2016</li>
+              </ul>
+            </li>
+            <li>Learning to compare
+              <ul>
+                <li>Jake Snell, Kevin Swersky, Richard S. Zemel, Prototypical Networks for Few-shot Learning, NIPS, 2017</li>
+                <li>Oriol Vinyals, Charles Blundell, Timothy Lillicrap, Koray Kavukcuoglu, Daan Wierstra, Matching Networks for One Shot Learning, NIPS, 2016</li>
+                <li>Flood Sung, Yongxin Yang, Li Zhang, Tao Xiang, Philip H.S. Torr, Timothy M. Hospedales, Learning to Compare: Relation Network for Few-Shot Learning, CVPR, 2018</li>
+              </ul>
+            </li>
+            <li>Learning the whole learning algorithm
+              <ul>
+                <li>Adam Santoro, Sergey Bartunov, Matthew Botvinick, Daan Wierstra, Timothy Lillicrap, Meta-Learning with Memory-Augmented Neural Networks, ICML, 2016</li>
+                <li>Nikhil Mishra, Mostafa Rohaninejad, Xi Chen, Pieter Abbeel, A Simple Neural Attentive Meta-Learner, ICLR, 2018</li>
+              </ul>
+            </li>
+            <li>Network architecture search:
+              <ul>
+                <li>RL based
+                  <ul>
+                    <li>Barret Zoph, Quoc V. Le, Neural Architecture Search with Reinforcement Learning, ICLR 2017</li>
+                    <li>Barret Zoph, Vijay Vasudevan, Jonathon Shlens, Quoc V. Le,  Learning Transferable Architectures for Scalable Image Recognition, CVPR, 2018</li>
+                    <li>Hieu Pham, Melody Guan, Barret Zoph, Quoc Le, Jeff Dean, Efficient Neural Architecture Search via Parameter Sharing, ICML, 2018</li>
+                  </ul>
+                </li>
+                <li>Evolution based
+                  <ul>
+                    <li>Esteban Real, Sherry Moore, Andrew Selle, Saurabh Saxena, Yutaka Leon Suematsu, Jie Tan, Quoc Le, Alex Kurakin, Large-Scale Evolution of Image Classifiers, ICML 2017</li>
+                    <li>Esteban Real, Alok Aggarwal, Yanping Huang, Quoc V Le, Regularized Evolution for Image Classifier Architecture Search, AAAI, 2019</li>
+                    <li>Hanxiao Liu, Karen Simonyan, Oriol Vinyals, Chrisantha Fernando, Koray Kavukcuoglu, Hierarchical Representations for Efficient Architecture Search, ICLR, 2018</li>
+                  </ul>
+                </li>
+                <li>Supernetwork based
+                  <ul>
+                    <li>Hanxiao Liu, Karen Simonyan, Yiming Yang, DARTS: Differentiable Architecture Search, ICLR, 2019</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        <h5>Applications to Natural language understanding:</h4>
+
+          <ul>
+            <li><strong>[Bansal, et al., arXiv’19]</strong> Trapit Bansal, Rishikesh Jha, Andrew McCallum, Learning to Few-Shot Learn Across Diverse Natural Language Classification Tasks, arXiv, 2019</li>
+            <li><strong>[Bose, et al., arXiv’19]</strong> Avishek Joey Bose, Ankit Jain, Piero Molino, William L. Hamilton, Meta-Graph: Few shot Link Prediction via Meta Learning, arXiv, 2019</li>
+            <li><strong>[Campagna, et al., ACL’20]</strong> Giovanni Campagna, Agata Foryciarz, Mehrad Moradshahi, Monica Lam, Zero-Shot Transfer Learning with Synthesized Data for Multi-Domain Dialogue State Tracking, ACL 2020</li>
+            <li><strong>[Chen, et al., EMNLP’19]</strong> Mingyang Chen, Wen Zhang, Wei Zhang, Qiang Chen, Huajun Chen, Meta Relational Learning for Few-Shot Link Prediction in Knowledge Graphs, EMNLP 2019</li>
+            <li><strong>[Chen, et al., INTERSPEECH'20]</strong> Yi-Chen Chen, Jui-Yang Hsu, Cheng-Kuang Lee, Hung-yi Lee, DARTS-ASR: Differentiable architecture search for multilingual speech recognition and adaptation, INTERSPEECH 2020</li>
+            <li><strong>[Chen, et al., ACL’20]</strong> Zhiyu Chen, Harini Eavani, Wenhu Chen, Yinyin Liu, William Yang Wang, Few-Shot NLG with Pre-Trained Language Model, ACL 2020</li>
+            <li><strong>[Chien, et al., INTERSPEECH’19]</strong> Jen-Tzung Chien, Wei Xiang Lieow, Meta Learning for Hyperparameter Optimization in Dialogue System, INTERSPEECH, 2019</li>
+            <li><strong>[Coope, et al., ACL’20]</strong> Samuel Coope, Tyler Farghly, Daniela Gerz, Ivan Vulić, Matthew Henderson, Span-ConveRT: Few-shot Span Extraction for Dialog with Pretrained Conversational Representations, ACL 2020</li>
+            <li><strong>[Dou, et al., EMNLP’19]</strong> Zi-Yi Dou, Keyi Yu, Antonios Anastasopoulos, Investigating Meta-Learning Algorithms for Low-Resource Natural Language Understanding Tasks, EMNLP 2019</li>
+            <li><strong>[Geng, et al., EMNLP’19]</strong> Ruiying Geng, Binhua Li, Yongbin Li, Xiaodan Zhu, Ping Jian, Jian Sun, Induction Networks for Few-Shot Text Classification, EMNLP, 2019</li>
+            <li><strong>[Geng, et al., ACL’20]</strong> Ruiying Geng, Binhua Li, Yongbin Li, Jian Sun, Xiaodan Zhu, Dynamic Memory Induction Networks for Few-Shot Text Classification, ACL 2020</li>
+            <li><strong>[Gu, et al., EMNLP’18]</strong> Jiatao Gu, Yong Wang, Yun Chen, Kyunghyun Cho, Victor O.K. Li, Meta-Learning for Low-Resource Neural Machine Translation, EMNLP, 2018</li>
+            <li><strong>[Guo, et al., ACL’19]</strong> Daya Guo, Duyu Tang, Nan Duan, Ming Zhou, Jian Yin, Coupling Retrieval and Meta-Learning for Context-Dependent Semantic Parsing, ACL, 2019</li>
+            <li><strong>[Hou, et al., ACL’20]</strong> Yutai Hou, Wanxiang Che, Yongkui Lai, Zhihan Zhou, Yijia Liu, Han Liu, Ting Liu, Few-shot Slot Tagging with Collapsed Dependency Transfer and Label-enhanced Task-adaptive Projection Network, ACL 2020</li>
+            <li><strong>[Hu, et al., ACL’19]</strong> Ziniu Hu, Ting Chen, Kai-Wei Chang, Yizhou Sun, Few-Shot Representation Learning for Out-Of-Vocabulary Words, ACL 2019</li>
+            <li><strong>[Huang, et al., NAACL’18]</strong> Po-Sen Huang, Chenglong Wang, Rishabh Singh, Wen-tau Yih, Xiaodong He, Natural Language to Structured Query Generation via Meta-Learning, NAACL 2018</li>
+            <li><strong>[Huang, et al., ACL’20]</strong> Yi Huang, Junlan Feng, Min Hu, Xiaoting Wu, Xiaoyu Du, Shuo Ma, Meta-Reinforced Multi-Domain State Generator for Dialogue Systems, ACL 2020</li>
+            <li><strong>[Kim, et al., ACL’20]</strong> Hwichan Kim, Tosho Hirasawa, Mamoru Komachi, Zero-shot North Korean to English Neural Machine Translation by Character Tokenization and Phoneme Decomposition, ACL 2020</li>
+            <li><strong>[Luo, et al., INTERSPEECH'20]</strong> Hongyin Luo, Shang-Wen Li, James Glass, Prototypical q networks for automatic conversational diagnosis and few-shot new disease adaption, INTERSPEECH 2020</li>
+            <li><strong>[Lv, et al., EMNLP’19]</strong> Xin Lv, Yuxian Gu, Xu Han, Lei Hou, Juanzi Li, Zhiyuan Liu, Adapting Meta Knowledge Graph Information for Multi-Hop Reasoning over Few-Shot Relations, EMNLP 2019</li>
+            <li><strong>[Madotto, et al., ACL’19]</strong> Andrea Madotto, Zhaojiang Lin, Chien-Sheng Wu, Pascale Fung, Personalizing Dialogue Agents via Meta-Learning, ACL 2019</li>
+            <li><strong>[Mohtarami, et al., EMNLP’19]</strong> Mitra Mohtarami, James Glass, Preslav Nakov, Contrastive language adaptation for cross-lingual stance detection, EMNLP 2019</li>
+            <li><strong>[Mu, et al., ACL’20]</strong> Jesse Mu, Percy Liang, Noah Goodman, Shaping Visual Representations with Language for Few-shot Classification, ACL 2020</li>
+            <li><strong>[Obamuyide, et al., ACL’19]</strong> Abiola Obamuyide, Andreas Vlachos, Model-Agnostic Meta-Learning for Relation Classification with Limited Supervision, ACL 2019</li>
+            <li><strong>[Qian, et al., ACL’19]</strong> Kun Qian, Zhou Yu, Domain Adaptive Dialog Generation via Meta Learning, ACL 2019</li>
+            <li><strong>[Shah, et al., ACL’19]</strong> Darsh Shah, Raghav Gupta, Amir Fayazi, Dilek Hakkani-Tur, Robust zero-shot cross-domain slot filling with example values, ACL 2019</li>
+            <li><strong>[Song, et al., ACL’20]</strong> Yiping Song, Zequn Liu, Wei Bi, Rui Yan, Ming Zhang, Learning to Customize Model Structures for Few-shot Dialogue Generation Tasks, ACL 2020</li>
+            <li><strong>[Sun, et al., EMNLP’18]</strong> Jingyuan Sun, Shaonan Wang, Chengqing Zong, Memory, Show the Way: Memory Based Few Shot Word Representation Learning, EMNLP 2018</li>
+            <li><strong>[Sun, et al., EMNLP’19]</strong> Shengli Sun, Qingfeng Sun, Kevin Zhou, Tengchao Lv, Hierarchical Attention Prototypical Networks for Few-Shot Text Classification, EMNLP 2019</li>
+            <li><strong>[Surís, et al., arXiv’19]</strong> Dídac Surís, Dave Epstein, Heng Ji, Shih-Fu Chang, Carl Vondrick, Learning to Learn Words from Narrated Video, arXiv, 2019</li>
+            <li><strong>[Tan, et al., EMNLP’19]</strong> Ming Tan, Yang Yu, Haoyu Wang, Dakuo Wang, Saloni Potdar, Shiyu Chang, Mo Yu, Out-of-Domain Detection for Low-Resource Text Classification Tasks, EMNLP 2019</li>
+            <li><strong>[Wang, et al., EMNLP’19]</strong> Zihao Wang, Kwun Ping Lai, Piji Li, Lidong Bing, Wai Lam, Tackling Long-Tailed Relations and Uncommon Entities in Knowledge Graph Completion, EMNLP 2019</li>
+            <li><strong>[Winata, et al., ACL’20]</strong> Genta Indra Winata, Samuel Cahyawijaya, Zhaojiang Lin, Zihan Liu, Peng Xu, Pascale Fung, Meta-Transfer Learning for Code-Switched Speech Recognition, ACL 2020</li>
+            <li><strong>[Wu, et al., EMNLP’19]</strong> Jiawei Wu, Wenhan Xiong, William Yang Wang, Learning to Learn and Predict: A Meta-Learning Approach for Multi-Label Classification, EMNLP 2019</li>
+            <li><strong>[Wu, et al., AAAI’20]</strong> Qianhui Wu, Zijia Lin, Guoxin Wang, Hui Chen, Börje F. Karlsson, Biqing Huang, Chin-Yew Lin, Enhanced Meta-Learning for Cross-lingual Named Entity Recognition with Minimal Resources, AAAI 2020</li>
+            <li><strong>[Xiong, et al., EMNLP’18]</strong> Wenhan Xiong, Mo Yu, Shiyu Chang, Xiaoxiao Guo, William Yang Wang, One-Shot Relational Learning for Knowledge Graphs, EMNLP 2018</li>
+            <li><strong>[Yan, et al., ACL’20]</strong> Guangfeng Yan, Lu Fan, Qimai Li, Han Liu, Xiaotong Zhang, Xiao-Ming Wu, Albert Y.S. Lam, Unknown Intent Detection Using Gaussian Mixture Model with an Application to Zero-shot Intent Classification, ACL 2020</li>
+            <li><strong>[Yan, et al., ACL’20]</strong> Ming Yan, Hao Zhang, Di Jin, Joey Tianyi Zhou, Multi-source meta transfer for low resource multiple-choice question answering, ACL 2020</li>
+            <li><strong>[Ye, et al., ACL’20]</strong> Zhiquan Ye, Yuxia Geng, Jiaoyan Chen, Jingmin Chen, Xiaoxiao Xu, SuHang Zheng, Feng Wang, Jun Zhang, Huajun Chen, Zero-shot Text Classification via Reinforced Self-training, ACL 2020</li>
+            <li><strong>[Ye, et al., ACL’19]</strong> Zhi-Xiu Ye, Zhen-Hua Ling, Multi-Level Matching and Aggregation Network for Few-Shot Relation Classification, ACL 2019</li>
+            <li><strong>[Yu, et al., ACL’20]</strong> Changlong Yu, Jialong Han, Haisong Zhang, Wilfred Ng, Hypernymy Detection for Low-Resource Languages via Meta Learning, ACL 2020</li>
+            <li><strong>[Yu, et al., ACL’18]</strong> Mo Yu, Xiaoxiao Guo, Jinfeng Yi, Shiyu Chang, Saloni Potdar, Yu Cheng, Gerald Tesauro, Haoyu Wang, Bowen Zhou, Diverse Few-Shot Text Classification with Multiple Metrics, ACL 2018</li>
+            <li><strong>[Zhang, et al., ACL’20]</strong> Biao Zhang, Philip Williams, Ivan Titov, Rico Sennrich, Improving Massively Multilingual Neural Machine Translation and Zero-Shot Translation, ACL 2020</li>
+            <li><strong>[Zhao, et al. EMNLP’19]</strong> Zhenjie Zhao, Xiaojuan Ma, Text Emotion Distribution Learning from Small Sample: A Meta-Learning Approach, EMNLP 2019</li>
+          </ul>
+  </div>
+</div>
+
+
 <!-- Contact Section -->
 <div class="w3-row-padding w3-padding-64 w3-container" id="contact">
   <div class="w3-content">
