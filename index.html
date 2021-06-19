@@ -57,10 +57,10 @@ body, html {
     <div class="w3-right w3-hide-small">
       <a href="#description" class="w3-bar-item w3-button"><i class="fa fa-info"></i> Description </a>
       <a href="#call" class="w3-bar-item w3-button"><i class="fa fa-file-text"></i> Call for Papers </a>
-      <a href="#speakers" class="w3-bar-item w3-button"><i class="fa fa-comment-o	
-"></i> Speakers </a>
+      <a href="#speakers" class="w3-bar-item w3-button"><i class="fa fa-comment-o	"></i> Speakers </a>
       <a href="#program" class="w3-bar-item w3-button"><i class="fa fa-user-secret"></i> Program </a>
       <a href="#organizer" class="w3-bar-item w3-button"><i class="fa fa-group"></i> Organizers </a>
+      <a href="#committee" class="w3-bar-item w3-button"><i class="fa fa-weixin"></i> Program committee </a>
       <a href="#reading" class="w3-bar-item w3-button"><i class="fa fa-book"></i> Reading </a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact </a>
     </div>
@@ -79,7 +79,8 @@ body, html {
   <a href="#call" onclick="w3_close()" class="w3-bar-item w3-button">Call for Papers</a>
   <a href="#speakers" onclick="w3_close()" class="w3-bar-item w3-button">Speakers</a>
   <a href="#program" onclick="w3_close()" class="w3-bar-item w3-button">Program</a>
-  <a href="#organizers" onclick="w3_close()" class="w3-bar-item w3-button">Organizers</a>
+  <a href="#organizer" onclick="w3_close()" class="w3-bar-item w3-button">Organizers</a>
+  <a href="#committee" onclick="w3_close()" class="w3-bar-item w3-button">Program committee</a>
   <a href="#reading" onclick="w3_close()" class="w3-bar-item w3-button">Reading</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
 </nav>
@@ -397,7 +398,42 @@ body, html {
 
 
 
-
+<div class="w3-row-padding w3-padding-64 w3-container w3-light-grey" id="committee">
+  <div class="w3-content">
+      <h3 class="w3-center">Program committee</h3>
+      <ul>
+        <li> Trapit Bansal (University of Massachusetts, Amherst) </li>
+        <li> Yangbin Chen (City University of Hong Kong) </li>
+        <li> Yutian Chen (DeepMind) </li>
+        <li> Samuel Coope (PolyAI) </li>
+        <li> Jennifer Drexler (Rev) </li>
+        <li> Tianyu Gao (Princeton University) </li>
+        <li> Xavi Gonzalvo (Google Research) </li>
+        <li> Yutai Hou (Harbin Institute of Technology) </li>
+        <li> Kuan-Po Huang (National Taiwan University) </li>
+        <li> Sathish Reddy Indurthi (Samsung) </li>
+        <li> Ankit Jain (Facebook) </li>
+        <li> Ping Jian (Beijing Institute of Technology) </li>
+        <li> Tom Ko (Southern University of Science and Technology) </li>
+        <li> Cheng-I Lai (Massachusetts Institute of Technology) </li>
+        <li> Zhaojiang Lin (The Hong Kong University of Science and Technology) </li>
+        <li> Yijia Liu (Alibaba Group) </li>
+        <li> Colin Lockard (Amazon) </li>
+        <li> Hongyin Luo (Massachusetts Institute of Technology) </li>
+        <li> Meryem M'hamdi (University of Southern California) </li>
+        <li> Andrea Madotto (The Hong Kong University of Science and Technology) </li>
+        <li> Fei Mi (École Polytechnique Fédérale de Lausanne) </li>
+        <li> Mehrad Moradshahi (Stanford University) </li>
+        <li> Hoang Long Nguyen (Apple) </li>
+        <li> Mohammad Salameh (University of Alberta) </li>
+        <li> Hsuan Su (National Taiwan University) </li>
+        <li> Jian Sun (Alibaba Group) </li>
+        <li> Chenglong Wang (University of Washington) </li>
+        <li> Yuan-Kuei Wu (National Taiwan University) </li>
+        <li> Yu Zhang (Google Brain) </li>
+      </ul>
+  </div>
+</div>
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
@@ -409,7 +445,7 @@ body, html {
 </div>
 
 <!-- Reading -->
-<div class="w3-row-padding w3-padding-64 w3-container w3-light-grey" id="reading">
+<div class="w3-row-padding w3-padding-64 w3-container" id="reading">
   <div class="w3-content">
       <h3 class="w3-center">Reading</h3>
       <p>Meta learning is one of the fastest growing research areas in the deep learning scope. However there is no standard definition for meta learning. Usually the main goal is to design models that can learn new tasks rapidly with few in domain training examples, by having models to pre-learn from many, relevant or not, training tasks in a way that the models ar    e easy to be generalized to new tasks. For better understanding the scope of meta learning, we provide several online courses and papers describing the works falling into the area. These works are just for showcasing, and we definitely encourage people with research not covered here but sharing the same goal mentioned above to submit.
@@ -528,7 +564,7 @@ body, html {
 
 
 <!-- Contact Section -->
-<div class="w3-row-padding w3-padding-64 w3-container" id="contact">
+<div class="w3-row-padding w3-padding-64 w3-container w3-light-grey" id="contact">
   <div class="w3-content">
     <h3 class="w3-center">CONTACT</h3>
     <p class="w3-center w3-large">Feel free to send us messages at:</p>
